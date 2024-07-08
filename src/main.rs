@@ -27,10 +27,10 @@ fn main() {
     }
 }
 
-fn swapadjacentelements(arr: &mut [i32; 10]) {
-    for i in (0..arr.len()).step_by(2) {
-        if i + 1 < arr.len() {
-            arr.swap(i, i + 1);
+fn swapadjacentelements(x: &mut [i32]) {
+    for i in (0..x.len()).step_by(2) {
+        if i + 1 < x.len() {
+            x.swap(i, i + 1);
         }
     }
 }
